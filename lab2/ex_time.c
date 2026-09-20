@@ -4,8 +4,8 @@
 #include <stdlib.h>
 extern char *tzname[];
 
-main() {
-    setenv("TZ", "America/Los_Angeles", 1);
+int main() {
+    putenv("TZ=PST8PDT");
     tzset();
 
     time_t now;
