@@ -5,7 +5,6 @@
 extern char *tzname[];
 
 int main() {
-    putenv("TZ=PST8PDT");
     tzset();
 
     time_t now;
